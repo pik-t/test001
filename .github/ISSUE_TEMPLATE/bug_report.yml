@@ -1,0 +1,58 @@
+name: 不具合報告
+description: 'Create a report to help us improve'
+body:
+  - type: checkboxes
+    id: target_context
+    attributes:
+      label: Screen
+      options:
+        - label: a
+  - type: checkboxes
+    id: target_function_worker
+    attributes:
+      label: bb
+      options:
+      - label: b
+  - type: checkboxes
+    id: target_function_salon
+    attributes:
+      label: cc
+      options:
+      - label: c
+  - type: checkboxes
+    id: target_function_proper
+    attributes:
+      label: dd
+      options:
+      - label: d
+  - type: checkboxes
+    id: target_environment
+    attributes:
+      label: 確認環境
+      options:
+        - label: その他
+  - type: textarea
+    id: summary
+    attributes:
+      label: 不具合概要
+      description: '不具合の概要を簡潔に書いてください。スクリーンショット等がありましたら貼り付けてください。'
+  - type: textarea
+    id: detail_reprocedure
+    attributes:
+      label: 再現手順
+      description: '再現させることができる手順を記載してください'
+      value: |
+        1.
+        2.
+        3.
+        ...
+  - type: input
+    id: detail_time
+    attributes:
+      label: 発生時刻
+      description: '再現し難い現象、詳細手順不明な場合、発生した時刻を記載してください(例: 2024/4/1 12:30:30頃)'
+  - type: input
+    id: detail_rate
+    attributes:
+      label: 発生頻度
+      description: '「何回確認して」「何回発生したか」出来る限り具体的に記載してください(例: 3回確認して3回発生。パーセントで記載しないでください)'
